@@ -34,3 +34,27 @@ const myfunction = function () {
   console.log("hello world");
 }; //undefined
 console.log(typeof myFunction);
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++
+// two types of memory availble 
+// stack memory (for primitive ), heap (non primitive)
+
+let myname="chunnu"
+
+let anothername=myname
+anothername="ayan"
+console.log(myname);
+console.log(anothername);
+
+let userOne={
+  email:"chunnu@google.com",
+  upi:"user@ybl"
+}
+let userTwo=userOne
+userTwo=userOne
+userTwo.email="ayan@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
